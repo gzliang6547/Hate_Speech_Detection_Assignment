@@ -6,7 +6,7 @@ from joblib import load
 
 # Load the trained Naive Bayes classifier
 naive_bayes_classifier = load('model.joblib')
-tfidf_vector = joblib.load('vectorizer.joblib')
+tfidf_vector = load('vectorizer.joblib')
 
 # Streamlit app
 def main():
