@@ -15,10 +15,9 @@ def main():
     st.write('Enter a sentence to detect.')
 
     # Input for name
-    input_text = st.text_input('Sentence:')
+    input_text = [st.text_input('Sentence:')]
 
     if st.button('Detect'):
-        if input_text.strip() != '':
             test_input = tfidf_vector.transform(input_text)
             res=naive_bayes_classifier.predict(test_input)[0]
 
@@ -28,8 +27,6 @@ def main():
                 detection = "Non-hateful"
 
             st.success(f'The sentence {input_text} is a {detection}')
-        else:
-            st.warning('Please enter a name.')
 
 
 if __name__ == '__main__':
