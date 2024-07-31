@@ -26,7 +26,7 @@ def main():
             elif res==0:
                 detection = "Non-hateful"
 
-            st.success(f'The sentence {input_text} is a {detection}')
+            st.success(f'The sentence {input_text[0]} is {detection}')
 
 
 if __name__ == '__main__':
