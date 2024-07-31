@@ -2,4 +2,4 @@ nltk
 joblib
 pandas
 streamlit
-sklearn.feature_extraction.text
+sklearn
