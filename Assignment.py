@@ -18,7 +18,7 @@ def main():
     input_text = st.text_input('Sentence:')
 
     if st.button('Detect'):
-        if input_name.strip() != '':
+        if input_text.strip() != '':
             test_input = tfidf_vector.transform(input_text)
             res=naive_bayes_classifier.predict(test_input)[0]
 
