@@ -30,7 +30,7 @@ def main():
             # Display prediction
             	st.success(f'The sentence {input_text} is a {detection}')
         else:
-            	st.warning('Please enter some words.')
+		st.warning('Please enter some words.')
 
 if __name__ == '__main__':
     main()
