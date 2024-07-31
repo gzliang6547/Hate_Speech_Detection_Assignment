@@ -1,5 +1,6 @@
 import streamlit as st
 import nltk
+from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk import NaiveBayesClassifier
 from nltk.classify import apply_features
 from joblib import load
