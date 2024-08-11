@@ -13,7 +13,7 @@ import matplotlib.ticker as ticker
 
 # Load your logistic regression model and CountVectorizer
 lr_loaded = load('hate_speech_logistic_regression_model.joblib')
-cv_loaded = load('hate_speech_count_vectorizer.joblib')
+cv_loaded = load('hate_speech_countvectorizer.joblib')
 
 # Streamlit application starts here
 def main():
