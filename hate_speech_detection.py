@@ -52,7 +52,7 @@ def predict_and_display(sentences):
     transformed_sentences = cv_loaded.transform(sentences)
 
     # Make predictions
-    results = lr_loaded.predict(transformed_sentences)
+    results = ("Non-hateful" if lr_loaded.predict(transformed_sentences) == 0 else "Hateful")
 
     # Combine the inputs and predictions into a DataFrame
     results_df = pd.DataFrame({
